@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tous les posts{% endblock %}
+
+{% block body %}
+    <h1>Tous les posts</h1>
+
+    {% for post in posts %}
+        <article class="post">
+            <h2>{{ post.title }}</h2>
+            <p><em>Par {{ post.author }} le {{ post.publishedAt ? post.publishedAt|date('d/m/Y H:i') : 'Non défini' }}</em></p>
+            <div class="content">
+                {{ post.content|raw }}
+            </div>
+            {% if post.slug is defined %}
+                <p>Description : {{ post.slug }}</p>
+            {% endif %}
+            <hr>
+        </article>
+    {% else %}
+        <p>Aucun post disponible pour le moment.</p>
+    {% endfor %}
+
+{% endblock %}
+
