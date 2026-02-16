@@ -1,0 +1,47 @@
+/* Page */
+body {
+  font-family: "Arial, sans-serif";
+  background-color: #ffffff;
+  color: #333;
+  margin: 20px;
+}
+
+h1 {
+  color: #007;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #000044;
+  margin-bottom: 5px;
+}
+
+/* Article */
+.post {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.post em {
+  font-size: 0.9em;
+  color: #999999;
+}
+
+.post .content {
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+.post p {
+  margin: 5px 0;
+}
+
+.post hr {
+  border: none;
+  border-top: 1px solid white;
+  margin-top: 20px;
+}
